@@ -1,0 +1,39 @@
+_model: page
+---
+title: About the public holidays
+---
+body:
+
+**21 March (Human Rights Day)**
+Commemorates the day that the South African Human Rights Commission was launched, i.e. 21 March 1996, 35 years after the fateful events of 21 March 1960 when demonstrators in Sharpeville were gunned down by police.
+
+**27 April (Freedom Day)**
+Freedom Day commemorates the first democratic elections held in South Africa on 27 April 1994. 
+
+**16 June (Youth Day)**
+Youth Day, previously known as Soweto Day, commemorates the events of 16 June 1976:
+In 1975 protests started in African schools after a directive from the then Bantu Education Department that Afrikaans had to be used on an equal basis with English as a language of instruction in secondary schools. The issue, however, was not so much the Afrikaans as the whole system of Bantu education which was characterised by separate schools and universities, poor facilities, overcrowded classrooms and inadequately trained teachers. On 16 June 1976 more than 20 000 pupils from Soweto began a protest march. In the wake of clashes with the police, and the violence that ensued during the next few weeks, approximately 700 hundred people, many of them youths, were killed and property destroyed.
+
+**9 August (National Women's Day)**
+This day commemorates 9 August 1956 when women participated in a national march to petition against pass laws. (Pass lawas were a form of legislation that required African persons to carry a document on them to 'prove' that they were allowed to enter a whites-only area).
+
+
+**24 September (Heritage Day) a.k.a Braai Day**
+"This day recognises uniquely South African culture, e.g. our creativity, historical inheritance, language, the food we love (hence the alternative name "braai day"), and the land in which we live.
+
+**16 December (Day of Reconciliation)**
+In apartheid South Africa 16 December was known as Day of the Vow, as the Voortrekkers in preparation for the battle on 16 December against the Zulus took a Vow before God that they would build a church and that they and their descendants would observe the day as a day of thanksgiving should they be granted victory. With the advent of democracy in South Africa 16 December retained its status as a public holiday, however, this time with the purpose of fostering reconciliation and national unity.
+
+During the earlier part of the 19th century, many Afrikaner farmers left the eastern cape and moved inland. Among them was the Voortrekkers, a group of Afrikaners protesting British colonialism and seeking independent republics on what was reputedly empty land. But the land was not empty and clashes between these Afrikaners and indigenous peoples were inevitable.
+
+Late in 1837 one of the Voortrekker leaders, Piet Retief, entered into negotiations for land with Dingane, the Zulu king. In terms of the negotiations Dingane promised the Voortrekkers land on condition they returned cattle to him stolen by Sekonyela (the Tlokwa chief). This Retief did and apparently he and Dingane signed a treaty on 6 February 1838. During the ceremony Dingane had Retief and his entourage murdered - an event which was witnessed by Francis Owen, a missionary who described the scene in his diary.
+
+In ensuing battles between Zulus and Voortrekkers over the next few months numerous lives were lost on both sides.
+
+On 16 December 1838 about 10 000 troops under the command of Dambuza (Nzobo) and Nhlela attacked the Voortrekkers, but the 470 Voortrekkers, with the advantage of gun powder, warded them off. Only three Voortrekkers were wounded, but more than 3 000 Zulus were killed during the battle.
+---
+reference1: https://en.wikipedia.org/wiki/Public_holidays_in_South_Africa
+---
+reference2: https://www.gov.za/about-sa/public-holidays
+---
+_template: page.html

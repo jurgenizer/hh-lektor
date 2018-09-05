@@ -1,0 +1,33 @@
+_model: page
+---
+title: 2020
+---
+body: South Africa has 12 public holidays as determined by the Public Holidays Act. The Act determines whenever any public holiday falls on a Sunday, the Monday following on it shall be a public holiday.
+---
+tablePublicHolidays:
+
+| Date        | Day | Holiday                      |
+|-------------|-----|------------------------------|
+| 1 Jan 2020  | Wed | New Year's Day               |
+| 21 Mar 2020 | Sat | Human Rights Day             |
+| 10 Apr 2020 | Fri | Good Friday                  |
+| 13 Apr 2020 | Mon | Family Day                   |
+| 27 Apr 2020 | Mon | Freedom Day                  |
+| 1 May 2020  | Fri | Workers' Day                 |
+| 16 Jun 2020 | Tue | Youth Day                    |
+| 9 Aug 2020  | Sun | National Women's Day         |
+| 10 Aug 2020 | Mon | National Women's Day Holiday |
+| 24 Sep 2020 | Thu | Heritage Day                 |
+| 16 Dec 2020 | Wed | Day of Reconciliation        |
+| 25 Dec 2020 | Fri | Christmas Day                |
+| 26 Dec 2020 | Sat | Day of Goodwill              |
+---
+reference: https://www.gov.za/about-sa/public-holidays
+---
+reference1: https://www.gov.za/about-sa/public-holidays
+---
+reference2: https://www.gov.za/about-sa/school-calendar
+---
+tableSchoolHolidays: School holidays for 2020 will be published when available.
+---
+_template: table.html

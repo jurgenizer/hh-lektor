@@ -1,0 +1,8 @@
+[project]
+name = HappyHols
+url = https://www.happyhols.co.za
+locale = en_Za
+url_style = absolute
+
+[packages]
+lektor-webpack-support = 0.5

@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../../../../HappyHolsDev/bulma-0.7.1/sass/utilities/animations.css",
+	"sources": [
+		"../../../../HappyHolsDev/bulma-0.7.1/sass/utilities/animations.sass"
+	],
+	"sourcesContent": [
+		"@keyframes spinAround {\n  from {\n    transform: rotate(0deg); }\n  to {\n    transform: rotate(359deg); } }\n"
+	],
+	"mappings": "AAAA,UAAU,CAAV,UAAU;EACR,AAAA,IAAI;IACF,SAAS,EAAE,YAAM;;EACnB,AAAA,EAAE;IACA,SAAS,EAAE,cAAM",
+	"names": []
+}

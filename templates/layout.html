@@ -1,0 +1,96 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="{{ '/static/bulmahappy.min.css'|url }}"> 
+
+<!--favicon stuff-->
+<link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png">
+<link rel="manifest" href="/static/site.webmanifest">
+<link rel="mask-icon" href="/static/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/static/favicon.ico">
+<meta name="msapplication-TileColor" content="#ff6b6b">
+<meta name="msapplication-config" content="/static/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<title>{% block title %}Welcome{% endblock %} — HappyHols</title>
+<body>
+ <nav class="navbar is-primary">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="{{ '/'|url }}" style="font-weight:bold;">
+          Home
+          </a>
+          <span class="navbar-burger burger" data-target="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navMenu" class="navbar-menu">
+          <div class="navbar-end">
+            <a href="{{ '/'|url }}" class="navbar-item is-active">2018</a>
+            <a href="/2019" class="navbar-item">2019</a>
+	   		<a href="/2020" class="navbar-item">2020</a>
+			<a href="/about-the-public-holidays" class="navbar-item">About the public holidays</a> 
+			<a href="/factoids" class="navbar-item">Factoids</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+<section class="hero is-primary">
+  <div class="hero-body is-paddingless">
+    <div class="container">
+      <img src="{{ '/static/happyhols-logo.svg'|url }}" width="272" height="130" onerror="this.src=happyhols-logo.png; this.onerror=null;">
+      <h2 class="subtitle">
+        South African Public and School Holidays 
+      </h2>
+    </div><br>
+  </div>
+</section>
+    
+<div class="container is-fluid">
+<div class="column is-10">
+<div class="content">
+    <div class="page">
+    {% block body %}{% endblock %}
+    </div>
+</div>
+</div>
+</div>
+
+<div class="container is-fluid">
+<div class="column is-10">
+   Reference(s): </br>
+   <a href="{{ this.reference1 }}">{{ this.reference1 }}</a> </br>
+   <a href="{{ this.reference2 }}">{{ this.reference2 }}</a> 
+</div>
+</div>
+
+
+
+
+<footer class="footer has-text-white">
+<div class="content has-text-centered">
+Important stuff (disclaimer): We do our utmost to provide accurate public and school holiday information, but date changes and mistakes a may occur. Please double check holiday dates with other information providers before making any travel plans. The site owener will not be liable for any claims whatsoever, whether for damages or otherwise, directly or indirectly, attributable to the use of and/or reliance on information or links provided on this website.<br>
+&copy;Copyright 2018 by happyhols 
+<img src="{{ '/static/happy.svg'|url }}" width="60" height="40">
+</div>
+</footer>
+
+<script type="text/javascript">
+      (function() {
+        var burger = document.querySelector('.burger');
+        var nav = document.querySelector('#'+burger.dataset.target);
+        burger.addEventListener('click', function(){
+          burger.classList.toggle('is-active');
+          nav.classList.toggle('is-active');
+        });
+      })();
+    </script>
+  
+</body>
