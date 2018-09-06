@@ -1,7 +1,9 @@
 <!doctype html>
+<head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Public and school holiday information for South Africa">
 
 <link rel="stylesheet" href="{{ '/static/bulmahappy.min.css'|url }}"> 
 
@@ -16,13 +18,26 @@
 <meta name="msapplication-config" content="/static/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
 
-<title>{% block title %}Welcome{% endblock %} — HappyHols</title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125357667-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-125357667-1');
+</script>
+
+
+<title>{% block title %}Welcome{% endblock %} - HappyHols</title>
+</head>
+
 <body>
  <nav class="navbar is-primary">
       <div class="container">
         <div class="navbar-brand">
           <a class="navbar-item" href="{{ '/'|url }}" style="font-weight:bold;">
-          Home
+          happyhols
           </a>
           <span class="navbar-burger burger" data-target="navMenu">
             <span></span>
@@ -95,3 +110,4 @@ Important stuff (disclaimer): We do our utmost to provide accurate public and sc
     </script>
   
 </body>
+</html>
