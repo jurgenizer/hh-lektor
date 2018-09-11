@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }} | Holiday spots to visit{% endblock %}
+{% block body %}
+<h1>{{ this.title }}</h1>
+<div class="container is-fluid">
+{{ this.body }}
+  {% set images = this.attachments.images.all() %}
+  {% if images %}
+   <div class="columns">
+    {% for image in images %}
+      <div class="column">
+            <img src="{{ image|url }}" alt="Photo of {{ this.title }}">
+      </div>
+     {% endfor %}
+  </div>
+  {% endif %}
+</div> 
+{% endblock %}

@@ -52,6 +52,7 @@
 	   		<a href="/2020" class="navbar-item">2020</a>
 			<a href="/about-the-public-holidays" class="navbar-item">About the public holidays</a> 
 			<a href="/factoids" class="navbar-item">Factoids</a>
+			<a href="/spots" class="navbar-item">Spots</a>
           </div>
         </div>
       </div>
@@ -70,7 +71,7 @@
 </section>
     
 <div class="container is-fluid">
-<div class="column is-10">
+<div class="column">
 <div class="content">
     <div class="page">
     {% block body %}{% endblock %}
@@ -79,23 +80,24 @@
 </div>
 </div>
 
+
 <div class="container is-fluid">
-<div class="column is-10">
+<div class="column">
+   {% if (this.reference1) or (this.reference2) %}
    Reference(s): </br>
+  {% endif %}
    <a href="{{ this.reference1 }}">{{ this.reference1 }}</a> </br>
    <a href="{{ this.reference2 }}">{{ this.reference2 }}</a> 
+
 </div>
 </div>
-
-
-
 
 <footer class="footer has-text-white">
 <div class="content has-text-centered">
-Important stuff (disclaimer): We do our utmost to provide accurate public and school holiday information, but date changes and mistakes a may occur. Please double check holiday dates with other information providers before making any travel plans. The site owener will not be liable for any claims whatsoever, whether for damages or otherwise, directly or indirectly, attributable to the use of and/or reliance on information or links provided on this website.<br>
+Important stuff (disclaimer): We do our utmost to provide accurate public holiday, school holiday and travel information, but holiday dates may change, accomodation venues may change and mistakes a may occur. Please double check holiday dates and accomodation deatails with other information providers before making any travel plans. The site owner will not be liable for any claims whatsoever, whether for damages or otherwise, directly or indirectly, attributable to the use of and/or reliance on information or links provided on this website.<br>
 &copy;Copyright 2018 by happyhols 
 <img src="{{ '/static/happy.svg'|url }}" width="60" height="40"><br>
-Made with <a class="has-text-warning" href="https://www.getlektor.com/">Lektor</a> and <a class="has-text-warning" href="https://bulma.io/">Bulma</a> in Cape Town
+Made with <a class="has-text-dark" href="https://www.getlektor.com/">Lektor</a> and <a class="has-text-dark" href="https://bulma.io/">Bulma</a> in Cape Town
 </div>
 </footer>
 
