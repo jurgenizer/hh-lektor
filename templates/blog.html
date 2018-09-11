@@ -3,32 +3,34 @@
 {% block title %}Holiday Spots{% endblock %}
 {% block body %}
   <h1>Holiday Spots</h1>
-<div class="container is-fluid">
-  <ul class="blog-index">
-  <div class="section">
-  <article class="media">
+
+<div class="columns">
+<div class="column is-one-third">
+<ul class="is-marginless">
+
   {% for post in this.pagination.items %}
+
+  <a href="{{ post|url }}" class="has-text-weight-bold is-size-5">{{ post.title }}</a>
+  <p>{{ post.summary }}
+  <a class="more" href="{{ post|url }}">Read more ...</a></p>
+  
+  
   {% set image = post.attachments.images.first() %}
   {% if image %}  
-  <div class="media-left">
-    <figure class="media-left">
-        <a href="{{ post|url }}"><img src="{{ image.thumbnail(200)|url }}" alt="Photo of {{ post.title }}"></a>
+ 
+    <figure>
+       <a href="{{ post|url }}"><img src="{{ image.thumbnail(300)|url }}" alt="Photo of {{ post.title }}"></a>
    </figure>
-  </div>
+
   {% endif %}
-  <div class="media-content">
-      <div class="content">
-       <a href="{{ post|url }}" class="has-text-weight-bold is-size-5">{{ post.title }}</a>
-       <p>{{ post.summary }}
-       <a class="more" href="{{ post|url }}">Read more ...</a></p>
-    </div>
-  </div>
   {% endfor %}
- </article>
-</div>
+
 </ul>    
 </div>
+</div>
+
   {% if this.pagination.pages > 1 %}
     {{ render_pagination(this.pagination) }}
   {% endif %}
+  
 {% endblock %}
