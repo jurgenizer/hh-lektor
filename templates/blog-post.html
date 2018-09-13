@@ -6,9 +6,9 @@
 {{ this.body }}
   {% set images = this.attachments.images.all() %}
   {% if images %}
-   <div class="columns">
+   <div class="columns is-multiline is-mobile">
     {% for image in images %}
-      <div class="column">
+      <div class="column is-one-third-tablet is-one-third-desktop is-one-third-widescreen is-one-third-fullhd">
             <img src="{{ image|url }}" alt="Photo of {{ this.title }}">
       </div>
      {% endfor %}

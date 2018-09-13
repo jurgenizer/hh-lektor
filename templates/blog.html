@@ -4,17 +4,15 @@
 {% block body %}
   <h1>Holiday Spots</h1>
 
-<div class="columns">
-<div class="column is-one-third">
-<ul class="is-marginless">
+<div class="columns columns is-multiline is-mobile"">
+<div class="column column is-one-third-tablet is-one-third-desktop is-one-third-widescreen is-one-third-fullhd">
 
   {% for post in this.pagination.items %}
 
   <a href="{{ post|url }}" class="has-text-weight-bold is-size-5">{{ post.title }}</a>
   <p>{{ post.summary }}
   <a class="more" href="{{ post|url }}">Read more ...</a></p>
-  
-  
+ 
   {% set image = post.attachments.images.first() %}
   {% if image %}  
  
@@ -25,7 +23,7 @@
   {% endif %}
   {% endfor %}
 
-</ul>    
+
 </div>
 </div>
 
