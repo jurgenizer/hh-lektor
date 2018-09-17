@@ -2,6 +2,8 @@ _model: page
 ---
 title: Contact
 ---
+body:
+
 <form method="POST" action="https:
 
 //formspree.io/jurgen.geitner@gmail.com">
@@ -26,28 +28,13 @@ title: Contact
         </div>
     </div>  
 </form>
----
-body:
 
-<form method="POST" action="https://formspree.io/jurgen.geitner@gmail.com">
-    <div class="field">
-        <label class="label">Email</label>
-        <div class="control">
-            <input class="input" type="email" name="email" placeholder="Your email">
-        </div>
-    </div>    
-                
-                
-    <div class="field">
-        <label class="label">Message</label>
-        <div class="control">                
-            <textarea class="textarea" name="message" placeholder="Your message"></textarea>
-        </div>
-    </div>  
-    
-    <div class="field">
-        <div class="control">
-            <button class="button is-link" type="submit">Send</button>
-        </div>
-    </div>  
-</form>
+
+<br />
+**Imprint**
+
+87 Fairmount View<br />
+Punter's Way<br />
+Kenilworth<br />
+7708<br />
+Cape Town<br />
