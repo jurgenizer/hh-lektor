@@ -18,17 +18,13 @@
 <meta name="msapplication-config" content="/static/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
 
-
-<!-- Structured data stuff -  Google Search -->
-<script type="application/ld+json">
-{
-"@context": "http://schema.org",
-"@type": "Organization",
-"url": "https://happyhols.co.za",
-"logo": "https://happyhols.co.za/static/happyhols-logo.png"
-}
-</script>
-
+<!-- Structured data info - Google Search -->
+{% if (this.structuredLogoData) %}
+{{ this.structuredLogoData }}
+{% endif %}
+{% if (this.structuredTableData) %}
+{{ this.structuredTableData }}
+{% endif %}
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125357667-1"></script>
@@ -39,7 +35,6 @@
 
   gtag('config', 'UA-125357667-1');
 </script>
-
 
 <title>{% block title %}Welcome{% endblock %} - happyhols</title>
 </head>
@@ -100,7 +95,6 @@
   {% endif %}
    <a href="{{ this.reference1 }}">{{ this.reference1 }}</a> </br>
    <a href="{{ this.reference2 }}">{{ this.reference2 }}</a> 
-
 </div>
 </div>
 

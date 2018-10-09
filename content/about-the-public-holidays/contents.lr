@@ -37,3 +37,14 @@ reference1: https://en.wikipedia.org/wiki/Public_holidays_in_South_Africa
 reference2: https://www.gov.za/about-sa/public-holidays
 ---
 _template: page.html
+---
+structuredLogoData:
+
+<script type="application/ld+json">
+{
+"@context": "http://schema.org",
+"@type": "Organization",
+"url": "https://happyhols.co.za",
+"logo": "https://happyhols.co.za/static/happyhols-logo.png"
+}
+</script>

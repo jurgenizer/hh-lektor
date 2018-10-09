@@ -79,3 +79,14 @@ reference1: https://www.gcis.gov.za/content/resourcecentre/sa-info/yearbook2015-
 reference2: https://www.gcis.gov.za/content/resourcecentre/sa-info/pocketguide
 ---
 _template: page.html
+---
+structuredLogoData:
+
+<script type="application/ld+json">
+{
+"@context": "http://schema.org",
+"@type": "Organization",
+"url": "https://happyhols.co.za",
+"logo": "https://happyhols.co.za/static/happyhols-logo.png"
+}
+</script>
