@@ -15,4 +15,23 @@
   </div>
   {% endif %}
 </div> 
+
+<section class="section">
+<div class="container">
+{% set siblings = this.get_siblings() %}
+{% set older = siblings.next_page %}
+{% set newer = siblings.prev_page %}
+
+<nav class="pagination" role="navigation" aria-label="pagination">
+
+        {% if older %}
+            <a class="pagination-previous" href="{{ older|url }}">Previous: {{ older.title }}</a>
+        {% endif %}
+        {% if newer %}
+            <a class="pagination-next" href="{{ newer|url }}">Next: {{ newer.title }}</a>
+        {% endif %}
+</nav>
+</div> 
+</section>
+
 {% endblock %}

@@ -4,9 +4,7 @@ title: Contact
 ---
 body:
 
-<form method="POST" action="https:
-
-//formspree.io/jurgen.geitner@gmail.com">
+<form method="POST" action="https://formspree.io/jurgen.geitner@gmail.com">
     <div class="field">
         <label class="label">Name</label>
         <div class="control">
