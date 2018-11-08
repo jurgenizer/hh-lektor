@@ -1,0 +1,17 @@
+{% extends "layout+af.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+  <h2>{{ this.title }}</h2>
+  {{ this.body }}
+  
+    <h3>Openbare vakansiedae</h3>
+    <div class="table is-striped">
+     {{ this.tablePublicHolidays }}
+    </div>
+
+    <h3>Skoolvakansies</h3>
+    <div class="table is-striped">
+     {{ this.tableSchoolHolidays }}
+    </div>
+
+{% endblock %}

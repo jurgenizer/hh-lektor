@@ -1,8 +1,17 @@
 [project]
 name = HappyHols
-url = https://www.happyhols.co.za
-locale = en_Za
+url = https://happyhols.co.za/
 url_style = absolute
+
+[alternatives.en]
+name = English
+primary = yes
+locale = en_US
+
+[alternatives.af]
+name = Afrikaans
+url_prefix = /af/
+locale = af_ZA
 
 [packages]
 lektor-webpack-support = 0.5

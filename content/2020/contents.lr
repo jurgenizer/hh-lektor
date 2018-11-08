@@ -59,7 +59,7 @@ structuredTableData:
   "@context" : "http://schema.org",
   "@type" : "Dataset",
   "name" : "School Holidays",
-  "description" : "List of public holidays in South Africa",
+  "description" : "List of school holidays in South Africa",
   "temporalCoverage" : "2020",
   "spatialCoverage" : "South Africa",
   "sourceOrganization" : "https://happyhols.co.za"

@@ -30,7 +30,7 @@ tableSchoolHolidays:
 
 | Term | Start             | End            |
 |------|-------------------|----------------|
-| 1    | 29 Mar 2018       | 9 April 2018   |
+| 1    | 29 March 2018     | 9 April 2018   |
 | 2    | 23 June 2018      | 16 July 2018   |
 | 3    | 29 September 2018 | 8 October 2018 |
 | 4    | 13 December 2018  | 8 January 2019 |
@@ -45,7 +45,7 @@ structuredData:
   "@context" : "http://schema.org",
   "@type" : "Dataset",
   "name" : "Public Holidays",
-  "description" : "List of public holidays in South Africa",
+  "description" : "List of public holidays in South Africa 2018 to 2020",
   "temporalCoverage" : "2018 - 2020",
   "spatialCoverage" : "South Africa",
   "sourceOrganization" : "https://happyhols.co.za"
@@ -53,7 +53,7 @@ structuredData:
   "@context" : "http://schema.org",
   "@type" : "Dataset",
   "name" : "School Holidays",
-  "description" : "List of public holidays in South Africa",
+  "description" : "List of school holidays in South Africa 2018 to 2020",
   "temporalCoverage" : "2018 - 2020",
   "spatialCoverage" : "South Africa",
   "sourceOrganization" : "https://happyhols.co.za"
@@ -76,7 +76,7 @@ structuredTableData:
   "@context" : "http://schema.org",
   "@type" : "Dataset",
   "name" : "School Holidays",
-  "description" : "List of public holidays in South Africa",
+  "description" : "List of school holidays in South Africa",
   "temporalCoverage" : "2018",
   "spatialCoverage" : "South Africa",
   "sourceOrganization" : "https://happyhols.co.za"
