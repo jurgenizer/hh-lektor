@@ -1,0 +1,37 @@
+{% extends "layout+af.html" %}
+{% block title %}{{ this.title }} | Vakansieplekke om te besoek{% endblock %}
+{% block body %}
+<h1>{{ this.title }}</h1>
+<div class="container is-fluid">
+{{ this.body }}
+  {% set images = this.attachments.images.all() %}
+  {% if images %}
+   <div class="columns is-multiline is-tablet">
+    {% for image in images %}
+      <div class="column is-one-third">
+            <img src="{{ image|url }}" alt="Photo of {{ this.title }}">
+      </div>
+     {% endfor %}
+  </div>
+  {% endif %}
+</div> 
+
+<section class="section">
+<div class="container">
+{% set siblings = this.get_siblings() %}
+{% set older = siblings.next_page %}
+{% set newer = siblings.prev_page %}
+
+<nav class="pagination" role="navigation" aria-label="pagination">
+
+        {% if older %}
+            <a class="pagination-previous" href="{{ older|url }}">Previous: {{ older.title }}</a>
+        {% endif %}
+        {% if newer %}
+            <a class="pagination-next" href="{{ newer|url }}">Next: {{ newer.title }}</a>
+        {% endif %}
+</nav>
+</div> 
+</section>
+
+{% endblock %}
