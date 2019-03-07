@@ -6,7 +6,6 @@ body: Suid-Afrika het 12 openbare vakansiedae soos bepaal deur die Wet op Openba
 ---
 tablePublicHolidays:
 
-
 | Datum       | Dag      | Vakansie            |
 |-------------|----------|---------------------|
 | 1 Jan 2020  | Woensdag | Nuwejaarsdag        |
@@ -24,13 +23,18 @@ tablePublicHolidays:
 | 26 Des 2020 | Saterdag | Welwillendheidsdag  |
 
 ---
-reference: https://www.gov.za/about-sa/public-holidays
----
 reference1: https://www.gov.za/about-sa/public-holidays
 ---
 reference2: https://www.gov.za/about-sa/school-calendar
 ---
-tableSchoolHolidays: Skoolvakansies vir 2020 sal gepubliseer word wanneer dit beskikbaar is.
+tableSchoolHolidays:
+
+| Termyn | Begin             | Einde             |
+|--------|-------------------|-------------------|
+| 1      | 21 Maart 2020     | 30 Maart 2020     |
+| 2      | 13 Junie 2020     | 6 Julie 2020      |
+| 3      | 19 September 2020 | 28 September 2020 |
+| 4      | 3 Desember 2020   | ? Januarie 2021   |
 ---
 _template: table+af.html
 ---

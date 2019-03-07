@@ -33,7 +33,7 @@ tableSchoolHolidays:
 | 1      | 16 Maart 2019     | 1 April 2019      |
 | 2      | 15 Junie 2019     | 8 Julie 2019      |
 | 3      | 21 September 2019 | 30 September 2019 |
-| 4      | 5 Desember 2019   | 7 Januarie 2020   |
+| 4      | 5 Desember 2019   | 14 Januarie 2020  |
 ---
 _template: table+af.html
 ---

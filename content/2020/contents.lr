@@ -22,13 +22,18 @@ tablePublicHolidays:
 | 25 Dec 2020 | Fri | Christmas Day                |
 | 26 Dec 2020 | Sat | Day of Goodwill              |
 ---
-reference: https://www.gov.za/about-sa/public-holidays
----
 reference1: https://www.gov.za/about-sa/public-holidays
 ---
 reference2: https://www.gov.za/about-sa/school-calendar
 ---
-tableSchoolHolidays: School holidays for 2020 will be published when available.
+tableSchoolHolidays:
+
+| Term | Start             | End               |
+|------|-------------------|-------------------|
+| 1    | 21 March 2020     | 30 March 2020     |
+| 2    | 13 June 2020      | 6 July 2020       |
+| 3    | 19 September 2020 | 28 September 2020 |
+| 4    | 3 December 2020   | ? January 2021    |
 ---
 _template: table.html
 ---

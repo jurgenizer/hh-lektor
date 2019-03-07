@@ -33,7 +33,7 @@ tableSchoolHolidays:
 | 1    | 16 March 2019     | 1 April 2019      |
 | 2    | 15 June 2019      | 8 July 2019       |
 | 3    | 21 September 2019 | 30 September 2019 |
-| 4    | 5 December 2019   | 7 January 2020    |
+| 4    | 5 December 2019   | 14 January 2020   |
 ---
 _template: table.html
 ---
