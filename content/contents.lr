@@ -56,17 +56,19 @@ structuredTableData:
   "@context" : "http://schema.org",
   "@type" : "Dataset",
   "name" : "Public Holidays",
-  "description" : "List of public holidays in South Africa",
-  "temporalCoverage" : "2019",
+  "description" : "This is an online list of pubic holidays South Africa, free for humans and machines",
+  "temporalCoverage" : "2019/2020",
   "spatialCoverage" : "South Africa",
-  "sourceOrganization" : "https://happyhols.co.za"
+  "sourceOrganization" : "https://happyhols.co.za",
+  "license" : "https://github.com/jurgenizer/hh-lektor/blob/master/LICENSE"
 }, {
   "@context" : "http://schema.org",
   "@type" : "Dataset",
   "name" : "School Holidays",
-  "description" : "List of school holidays in South Africa",
-  "temporalCoverage" : "2019",
+  "description" : "This is an online list of pubic holidays South Africa, free for humans and machines",
+  "temporalCoverage" : "2019/2020",
   "spatialCoverage" : "South Africa",
-  "sourceOrganization" : "https://happyhols.co.za"
+  "sourceOrganization" : "https://happyhols.co.za",
+  "license" : "https://github.com/jurgenizer/hh-lektor/blob/master/LICENSE"
 } ]
 </script>
