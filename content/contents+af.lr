@@ -56,7 +56,7 @@ structuredTableData:
   "@context" : "http://schema.org",
   "@type" : "Dataset",
   "name" : "Openbare Vakansiedae",
-  "description" : "Lys van openbare vakansiedae in Suid-Afrika",
+  "description" : "Lys van openbare vakansiedae in Suid-Afrika, gratis vir alle mense en masjiene",
   "temporalCoverage" : "2019",
   "spatialCoverage" : "Suid-Afrika",
   "sourceOrganization" : "https://happyhols.co.za"
@@ -64,7 +64,7 @@ structuredTableData:
   "@context" : "http://schema.org",
   "@type" : "Dataset",
   "name" : "Skoolvakansies",
-  "description" : "Lys van skoolvakansies in Suid-Afrika",
+  "description" : "Lys van skoolvakansies in Suid-Afrika, gratis vir alle mense en masjiene",
   "temporalCoverage" : "2019",
   "spatialCoverage" : "Suid-Afrika",
   "sourceOrganization" : "https://happyhols.co.za"
