@@ -56,7 +56,7 @@ structuredTableData:
   "@context" : "http://schema.org",
   "@type" : "Dataset",
   "name" : "Public Holidays",
-  "description" : "List of public holidays in South Africa",
+  "description" : "This is an online list of public holidays South Africa, free for humans and machines",
   "temporalCoverage" : "2020",
   "spatialCoverage" : "South Africa",
   "sourceOrganization" : "https://happyhols.co.za"
@@ -64,7 +64,7 @@ structuredTableData:
   "@context" : "http://schema.org",
   "@type" : "Dataset",
   "name" : "School Holidays",
-  "description" : "List of school holidays in South Africa",
+  "description" : "This is an online list of public holidays South Africa, free for humans and machines",
   "temporalCoverage" : "2020",
   "spatialCoverage" : "South Africa",
   "sourceOrganization" : "https://happyhols.co.za"
