@@ -57,7 +57,7 @@ structuredTableData:
   "@context" : "http://schema.org",
   "@type" : "Dataset",
   "name" : "Openbare Vakansiedae",
-  "description" : "Lys van openbare vakansiedae in Suid-Afrika",
+  "description" : "Lys van openbare vakansiedae in Suid-Afrika, gratis vir alle mense en masjiene",
   "temporalCoverage" : "2020",
   "spatialCoverage" : "South Africa",
   "sourceOrganization" : "https://happyhols.co.za"
@@ -65,7 +65,7 @@ structuredTableData:
   "@context" : "http://schema.org",
   "@type" : "Dataset",
   "name" : "Skoolvakansies",
-  "description" : "Lys van skool vakansiedae in Suid-Afrika",
+  "description" : "Lys van openbare vakansiedae in Suid-Afrika, gratis vir alle mense en masjiene",
   "temporalCoverage" : "2020",
   "spatialCoverage" : "South Africa",
   "sourceOrganization" : "https://happyhols.co.za"
