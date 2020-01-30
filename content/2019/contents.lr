@@ -1,26 +1,26 @@
 _model: page
 ---
-title: When are the public and school holidays in 2020?
+title: When are the public and school holidays in 2019?
 ---
 body: South Africa has 12 public holidays as determined by the Public Holidays Act. The Act determines whenever any public holiday falls on a Sunday, the Monday following on it shall be a public holiday.
 ---
 tablePublicHolidays:
 
-| Date        | Day | Holiday                      |
-|-------------|-----|------------------------------|
-| 1 Jan 2020  | Wed | New Year's Day               |
-| 21 Mar 2020 | Sat | Human Rights Day             |
-| 10 Apr 2020 | Fri | Good Friday                  |
-| 13 Apr 2020 | Mon | Family Day                   |
-| 27 Apr 2020 | Mon | Freedom Day                  |
-| 1 May 2020  | Fri | Workers' Day                 |
-| 16 Jun 2020 | Tue | Youth Day                    |
-| 9 Aug 2020  | Sun | National Women's Day         |
-| 10 Aug 2020 | Mon | National Women's Day Holiday |
-| 24 Sep 2020 | Thu | Heritage Day                 |
-| 16 Dec 2020 | Wed | Day of Reconciliation        |
-| 25 Dec 2020 | Fri | Christmas Day                |
-| 26 Dec 2020 | Sat | Day of Goodwill              |
+| Date        | Day | Holiday               |
+|-------------|-----|-----------------------|
+| 1 Jan 2019  | Tue | New Year's Day        |
+| 21 Mar 2019 | Thu | Human Rights Day      |
+| 19 Apr 2019 | Fri | Good Friday           |
+| 22 Apr 2019 | Mon | Family Day            |
+| 27 Apr 2019 | Sat | Freedom Day           |
+| 1 May 2019  | Wed | Workers' Day          |
+| 16 Jun 2019 | Sun | Youth Day             |
+| 17 Jun 2019 | Mon | Youth Day Holiday     |
+| 9 Aug 2019  | Fri | National Women's Day  |
+| 24 Sep 2019 | Tue | Heritage Day          |
+| 16 Dec 2019 | Mon | Day of Reconciliation |
+| 25 Dec 2019 | Wed | Christmas Day         |
+| 26 Dec 2019 | Thu | Day of Goodwill       |
 ---
 reference1: https://www.gov.za/about-sa/public-holidays
 ---
@@ -30,10 +30,10 @@ tableSchoolHolidays:
 
 | Term | Start             | End               |
 |------|-------------------|-------------------|
-| 1    | 21 March 2020     | 30 March 2020     |
-| 2    | 13 June 2020      | 6 July 2020       |
-| 3    | 19 September 2020 | 28 September 2020 |
-| 4    | 3 December 2020   | ? January 2021    |
+| 1    | 16 March 2019     | 1 April 2019      |
+| 2    | 15 June 2019      | 8 July 2019       |
+| 3    | 21 September 2019 | 30 September 2019 |
+| 4    | 5 December 2019   | 14 January 2020   |
 ---
 _template: table.html
 ---
@@ -57,16 +57,18 @@ structuredTableData:
   "@type" : "Dataset",
   "name" : "Public Holidays",
   "description" : "This is an online list of public holidays South Africa, free for humans and machines",
-  "temporalCoverage" : "2020",
+  "temporalCoverage" : "2019/2020",
   "spatialCoverage" : "South Africa",
-  "sourceOrganization" : "https://happyhols.co.za"
+  "sourceOrganization" : "https://happyhols.co.za",
+  "license" : "https://github.com/jurgenizer/hh-lektor/blob/master/LICENSE"
 }, {
   "@context" : "http://schema.org",
   "@type" : "Dataset",
   "name" : "School Holidays",
   "description" : "This is an online list of public holidays South Africa, free for humans and machines",
-  "temporalCoverage" : "2020",
+  "temporalCoverage" : "2019/2020",
   "spatialCoverage" : "South Africa",
-  "sourceOrganization" : "https://happyhols.co.za"
+  "sourceOrganization" : "https://happyhols.co.za",
+  "license" : "https://github.com/jurgenizer/hh-lektor/blob/master/LICENSE"
 } ]
 </script>
