@@ -1,6 +1,6 @@
 _model: page
 ---
-title: When are the public and school holidays in 2021?
+title: When are the public and school holidays in 2020?
 ---
 body: South Africa has 12 public holidays as determined by the Public Holidays Act. The Act determines that whenever any public holiday falls on a Sunday, the Monday following it shall be a public holiday.
 ---
@@ -8,18 +8,18 @@ tablePublicHolidays:
 
 | Date        | Day | Holiday                      |
 |-------------|-----|------------------------------|
-| 1 Jan 2021  | Fri | New Year's Day               |
-| 21 Mar 2021 | Sun | Human Rights Day             |
-| 2 Apr 2021  | Fri | Good Friday                  |
-| 5 Apr 2021  | Mon | Family Day                   |
-| 27 Apr 2021 | Tue | Freedom Day                  |
-| 1 May 2021  | Sat | Workers' Day                 |
-| 16 Jun 2021 | Wed | Youth Day                    |
-| 9 Aug 2021  | Mon | National Women's Day         |
-| 24 Sep 2021 | Fri | Heritage Day                 |
-| 16 Dec 2021 | Thu | Day of Reconciliation        |
-| 25 Dec 2021 | Sat | Christmas Day                |
-| 26 Dec 2021 | Sun | Day of Goodwill              |
+| 1 Jan 2020  | Wed | New Year's Day               |
+| 21 Mar 2020 | Sat | Human Rights Day             |
+| 10 Apr 2020 | Fri | Good Friday                  |
+| 13 Apr 2020 | Mon | Family Day                   |
+| 27 Apr 2020 | Mon | Freedom Day                  |
+| 1 May 2020  | Fri | Workers' Day                 |
+| 16 Jun 2020 | Tue | Youth Day                    |
+| 9 Aug 2020  | Sun | National Women's Day         |
+| 24 Sep 2020 | Thu | Heritage Day                 |
+| 16 Dec 2020 | Wed | Day of Reconciliation        |
+| 25 Dec 2020 | Fri | Christmas Day                |
+| 26 Dec 2020 | Sat | Day of Goodwill              |
 ---
 reference1: https://www.gov.za/about-sa/public-holidays
 ---
@@ -29,10 +29,10 @@ tableSchoolHolidays:
 
 | Term | Start             | End               |
 |------|-------------------|-------------------|
-| 1    | 24 April 2021     | 2 May 2021        |
-| 2    | 10 July 2021      | 25 July 2021      |
-| 3    | 2 October 2021    | 10 October 2021   |
-| 4    | 16 December 2021  | 11 (inland) 18 (coastal) January 2022  |
+| 1    | 19 March 2020     | 7 June 2020       |
+| 2    | 25 July 2020      | 23 August 2020    |
+| 3    | 24 October 2020   | 1 November 2020   |
+| 4    | 16 December 2020  | 14 February 2021  |
 ---
 _template: table.html
 ---
@@ -56,7 +56,7 @@ structuredTableData:
   "@type" : "Dataset",
   "name" : "Public Holidays",
   "description" : "This is an online list of public holidays South Africa, free for humans and machines",
-  "temporalCoverage" : "2021",
+  "temporalCoverage" : "2020",
   "spatialCoverage" : "South Africa",
   "sourceOrganization" : "https://happyhols.co.za"
 }, {
@@ -64,7 +64,7 @@ structuredTableData:
   "@type" : "Dataset",
   "name" : "School Holidays",
   "description" : "This is an online list of school holidays South Africa, free for humans and machines",
-  "temporalCoverage" : "2021",
+  "temporalCoverage" : "2020",
   "spatialCoverage" : "South Africa",
   "sourceOrganization" : "https://happyhols.co.za"
 } ]

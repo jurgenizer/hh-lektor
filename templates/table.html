@@ -10,8 +10,25 @@
     </div>
 
     <h3>School Holidays</h3>
+
+    {% if this.tableSchoolHolidaysCoastal %}
+    <p>Coastal cluster: Eastern Cape, KwaZulu-Natal, Northern Cape, Western Cape</p>
     <div class="table is-striped">
-     {{ this.tableSchoolHolidays }}
+       {{ this.tableSchoolHolidaysCoastal }}
     </div>
+    {% endif %}
+
+    {% if this.tableSchoolHolidaysInland %}
+    <p>Inland cluster: Free State, Gauteng, Limpopo, Mpumalanga and North West</p>
+    <div class="table is-striped">
+        {{ this.tableSchoolHolidaysInland }}
+     </div>
+     {% endif %}
+
+     {% if this.tableSchoolHolidays %}
+     <div class="table is-striped">
+        {{ this.tableSchoolHolidays }}
+     </div>
+     {% endif %}
 
 {% endblock %}

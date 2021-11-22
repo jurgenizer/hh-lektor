@@ -2,7 +2,7 @@ _model: page
 ---
 title: When are the public and school holidays in 2021?
 ---
-body: South Africa has 12 public holidays as determined by the Public Holidays Act. The Act determines whenever any public holiday falls on a Sunday, the Monday following on it shall be a public holiday.
+body: South Africa has 12 public holidays as determined by the Public Holidays Act. The Act determines that whenever any public holiday falls on a Sunday, the Monday following it shall be a public holiday.
 ---
 tablePublicHolidays:
 
@@ -29,10 +29,10 @@ tableSchoolHolidays:
 
 | Term | Start             | End               |
 |------|-------------------|-------------------|
-| 1    | 29 March 2021     | 12 April 2021     |
-| 2    | 28 June 2021      | 19 July 2021      |
-| 3    | 4 October 2021    | 11 October 2021   |
-| 4    | 9 December 2021   | ? January 2022    |
+| 1    | 24 April 2021     | 2 May 2021        |
+| 2    | 10 July 2021      | 25 July 2021      |
+| 3    | 2 October 2021    | 10 October 2021   |
+| 4    | 16 December 2021  | 11 (inland) 18 (coastal) January 2022  |
 ---
 _template: table.html
 ---

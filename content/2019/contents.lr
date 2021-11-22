@@ -2,7 +2,7 @@ _model: page
 ---
 title: When are the public and school holidays in 2019?
 ---
-body: South Africa has 12 public holidays as determined by the Public Holidays Act. The Act determines whenever any public holiday falls on a Sunday, the Monday following on it shall be a public holiday.
+body: South Africa has 12 public holidays as determined by the Public Holidays Act. The Act determines that whenever any public holiday falls on a Sunday, the Monday following it shall be a public holiday.
 ---
 tablePublicHolidays:
 
@@ -30,9 +30,9 @@ tableSchoolHolidays:
 
 | Term | Start             | End               |
 |------|-------------------|-------------------|
-| 1    | 16 March 2019     | 1 April 2019      |
-| 2    | 15 June 2019      | 8 July 2019       |
-| 3    | 21 September 2019 | 30 September 2019 |
+| 1    | 16 March 2019     | 31 March 2019     |
+| 2    | 15 June 2019      | 7 July 2019       |
+| 3    | 21 September 2019 | 29 September 2019 |
 | 4    | 5 December 2019   | 14 January 2020   |
 ---
 _template: table.html
