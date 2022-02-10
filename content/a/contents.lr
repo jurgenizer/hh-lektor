@@ -92,7 +92,7 @@ cookieConsentNoticeScript:
   <script>
     cookieConsentNotice.start('en', {
         analytics: 'G-8PDMD2MD95', 
-        hideAfterClick: false,
+        hideAfterClick: true,
         border: 'none',
         position: 'left',
         policyLink: 'https://happyhols.co.za/privacy-policy/',
