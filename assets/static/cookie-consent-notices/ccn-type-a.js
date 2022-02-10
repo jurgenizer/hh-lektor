@@ -269,7 +269,7 @@ class CookieConsentNotice {
       manageCookies: {
         color: obj.manageColor || '#4a4a4a',
         background: obj.manageBackground || '#fff',
-        text: obj.manageText || lang.manageText,
+        text: obj.manageText || lang.manageText
       }
     }
 
