@@ -124,9 +124,11 @@ class CookieConsentNotice {
       document.head.appendChild(Analytics);
       let AnalyticsData = document.createElement('script');
       AnalyticsData.text = `window.dataLayer = window.dataLayer || [];
-                                  function gtag(){dataLayer.push(arguments);}
-                                  gtag('js', new Date());
-                                  gtag('config', '${this.tracking.AnalyticsCode}');`;
+                            function gtag(){dataLayer.push(arguments);}
+                            gtag('js', new Date());
+                            gtag('config', '${this.tracking.AnalyticsCode}', {
+                              'page_path' : '/b/'
+                            });`;
       document.head.appendChild(AnalyticsData);
     }
 
