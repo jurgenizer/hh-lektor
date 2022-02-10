@@ -75,7 +75,7 @@ class CookieConsentNotice {
   }
 
   checkStatus() {
-    switch (localStorage.getItem("CookieConsentNotice")) {
+    switch (localStorage.getItem("CookieConsentNoticeF")) {
       case "1":
         this.openManageCookies();
         this.activateTracking();
@@ -100,7 +100,7 @@ class CookieConsentNotice {
   }
 
   acceptCookies() {
-    localStorage.setItem("CookieConsentNotice", "1")
+    localStorage.setItem("CookieConsentNoticeF", "1")
     this.openManageCookies()
     this.activateTracking()
     this.addCustomScript()
@@ -117,7 +117,9 @@ class CookieConsentNotice {
       AnalyticsData.text = `window.dataLayer = window.dataLayer || [];
                                   function gtag(){dataLayer.push(arguments);}
                                   gtag('js', new Date());
-                                  gtag('config', '${this.tracking.AnalyticsCode}');`;
+                                  gtag('config', '${this.tracking.AnalyticsCode}', {
+                                    'cookie_prefix': 'type_f'
+                                    });`;
       document.head.appendChild(AnalyticsData);
     }
 
