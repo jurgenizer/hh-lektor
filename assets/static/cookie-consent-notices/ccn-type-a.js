@@ -127,7 +127,7 @@ class CookieConsentNotice {
                                   function gtag(){dataLayer.push(arguments);}
                                   gtag('js', new Date());
                                   gtag('config', '${this.tracking.AnalyticsCode}', {
-                                    'page_path' : '/a/'
+                                  'cookie_prefix': 'typea'
                             });`;
       document.head.appendChild(AnalyticsData);
     }
