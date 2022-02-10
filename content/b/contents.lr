@@ -100,6 +100,6 @@ cookieConsentNoticeScript:
         bannerLinkText: 'Privacy Policy',
         acceptBtnText: 'Accept',
         rejectBtnText: 'Decline',
-        rejectBtnBackground: '#fff',  
+        rejectBtnBackground: '#209cee',  
       });
   </script>
