@@ -326,12 +326,15 @@ class CookieConsentNotice {
       },
       identifiersIcon: {
         text: obj.identifiersIcontext || lang.identifiersIconText,
+        color: obj.iconColor || '#209cee'
       },
       locationIcon: {
         text: obj.locationIconText || lang.locationIconText,
+        color: obj.iconColor || '#209cee'
       },
       browsingHistoryIcon: {
         text: obj.browsingHistoryIconText || lang.browsingHistoryIconText,
+        color: obj.iconColor || '#209cee'
       },
       deviceDetailsIcon: {
         text: obj.deviceDetailsIconText || lang.deviceDetailsIconText,
