@@ -169,14 +169,6 @@ class CookieConsentNotice {
 
   activateTracking() {
     // Google Analytics Tracking
-
-    /*
-    Update from https://developers.google.com/tag-platform/devguides/consent#tag-manager_1
-    gtag('consent', 'update', {
-      'ad_storage': 'granted'
-    });
-    */
-
     if (this.tracking.AnalyticsCode) {
       let Analytics = document.createElement('script');
       Analytics.setAttribute('src', `https://www.googletagmanager.com/gtag/js?id=${this.tracking.AnalyticsCode}`);
@@ -185,7 +177,7 @@ class CookieConsentNotice {
       AnalyticsData.text = `window.dataLayer = window.dataLayer || [];
                                   function gtag(){dataLayer.push(arguments);}
                                   gtag('js', new Date());
-                                  gtag('consent', 'update, {
+                                  gtag('consent', 'update', {
                                     'ad_storage': 'granted',
                                     'analytics_storage': 'granted'
                                   });
