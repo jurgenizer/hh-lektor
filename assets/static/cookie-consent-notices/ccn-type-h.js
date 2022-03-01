@@ -182,7 +182,8 @@ class CookieConsentNotice {
                                     'analytics_storage': 'granted'
                                   });
                                   gtag('config', '${this.tracking.AnalyticsCode}' , {
-                                    'cookie_prefix': 'type_h'
+                                    'cookie_prefix': 'type_h',
+                                    'page_title' : 'h',
                                     });`;
       document.head.appendChild(AnalyticsData);
     }
