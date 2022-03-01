@@ -79,7 +79,7 @@ class CookieConsentNotice {
   }
 
   checkStatus() {
-    switch (localStorage.getItem("CookieConsentNoticB")) {
+    switch (localStorage.getItem("CookieConsentNoticeB")) {
       case "1":
         this.openManageCookies();
         this.activateTracking();

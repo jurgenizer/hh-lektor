@@ -128,6 +128,7 @@ class CookieConsentNotice {
         break;
       case "0":
         this.openManageCookies();
+        this.setTrackingDefault();
         break;
       default:
         this.openSelector();
@@ -167,8 +168,29 @@ class CookieConsentNotice {
     this.disableTracking();
   }
 
+  // Set Google Analytics Tracking default to denied
+  setTrackingDefault(){
+    let AnalyticsData = document.createElement('script');
+    AnalyticsData.text = `window.dataLayer = window.dataLayer || [];
+                                function gtag(){dataLayer.push(arguments);}
+                                gtag('consent', 'default', {
+                                'ad_storage': 'denied',
+                                'analytics_storage': 'denied'
+                                });`;
+    document.head.appendChild(AnalyticsData);
+
+  }
+  
   activateTracking() {
     // Google Analytics Tracking
+
+    /*
+    Update from https://developers.google.com/tag-platform/devguides/consent#tag-manager_1
+    gtag('consent', 'update', {
+      'ad_storage': 'granted'
+    });
+    */
+
     if (this.tracking.AnalyticsCode) {
       let Analytics = document.createElement('script');
       Analytics.setAttribute('src', `https://www.googletagmanager.com/gtag/js?id=${this.tracking.AnalyticsCode}`);
@@ -177,11 +199,13 @@ class CookieConsentNotice {
       AnalyticsData.text = `window.dataLayer = window.dataLayer || [];
                                   function gtag(){dataLayer.push(arguments);}
                                   gtag('js', new Date());
+                                  gtag('consent', 'update, {
+                                    'ad_storage': 'granted',
+                                    'analytics_storage': 'granted'
+                                  });
                                   gtag('config', '${this.tracking.AnalyticsCode}' , {
-                                    'cookie_prefix': 'HappyHols',
-                                    'allow_google_signals': true,
-                                    'allow_ad_personalization_signals': true
-                                });`;
+                                    'cookie_prefix': 'type_h'
+                                    });`;
       document.head.appendChild(AnalyticsData);
     }
 
@@ -228,6 +252,14 @@ class CookieConsentNotice {
 
   disableTracking() {
     // Google Analytics Tracking ('client_storage': 'none')
+
+    /*
+    Update from https://developers.google.com/tag-platform/devguides/consent#tag-manager_1
+    gtag('consent', 'default', {
+     'ad_storage': 'denied'
+   });
+    */
+
     if (this.tracking.AnalyticsCode) {
       let Analytics = document.createElement('script');
       Analytics.setAttribute('src', `https://www.googletagmanager.com/gtag/js?id=${this.tracking.AnalyticsCode}`);
@@ -236,6 +268,10 @@ class CookieConsentNotice {
       AnalyticsData.text = `window.dataLayer = window.dataLayer || [];
                           function gtag(){dataLayer.push(arguments);}
                           gtag('js', new Date());
+                          gtag('consent', 'update', {
+                            'ad_storage': 'denied',
+                            'analytics_storage': 'denied'
+                          });                       
                           gtag('config', '${this.tracking.AnalyticsCode}' , {
                               'client_storage': 'none',
                               'anonymize_ip': true
