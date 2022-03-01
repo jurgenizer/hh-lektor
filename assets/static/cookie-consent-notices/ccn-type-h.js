@@ -128,10 +128,10 @@ class CookieConsentNotice {
         break;
       case "0":
         this.openManageCookies();
-        this.setTrackingDefault();
         break;
       default:
         this.openSelector();
+        this.setTrackingDefault();
     }
   }
 
