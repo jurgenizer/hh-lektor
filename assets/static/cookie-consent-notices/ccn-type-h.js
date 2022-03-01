@@ -131,7 +131,6 @@ class CookieConsentNotice {
         break;
       default:
         this.openSelector();
-        this.setTrackingDefault();
     }
   }
 
@@ -168,19 +167,6 @@ class CookieConsentNotice {
     this.disableTracking();
   }
 
-  // Set Google Analytics Tracking default to denied
-  setTrackingDefault(){
-    let AnalyticsData = document.createElement('script');
-    AnalyticsData.text = `window.dataLayer = window.dataLayer || [];
-                                function gtag(){dataLayer.push(arguments);}
-                                gtag('consent', 'default', {
-                                'ad_storage': 'denied',
-                                'analytics_storage': 'denied'
-                                });`;
-    document.head.appendChild(AnalyticsData);
-
-  }
-  
   activateTracking() {
     // Google Analytics Tracking
 
