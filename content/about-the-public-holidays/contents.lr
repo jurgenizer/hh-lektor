@@ -36,7 +36,7 @@ reference1: https://en.wikipedia.org/wiki/Public_holidays_in_South_Africa
 ---
 reference2: https://www.gov.za/about-sa/public-holidays
 ---
-_template: page.html
+_template: page-hotjar.html
 ---
 structuredLogoData:
 
