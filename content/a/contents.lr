@@ -92,6 +92,7 @@ cookieConsentNoticeScript:
   <script>
     cookieConsentNotice.start('en', {
         analytics: 'G-8PDMD2MD95', 
+        HotjarTrackingCode: '2886049',
         hideAfterClick: true,
         border: 'none',
         position: 'left',
