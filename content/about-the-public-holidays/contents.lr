@@ -36,7 +36,7 @@ reference1: https://en.wikipedia.org/wiki/Public_holidays_in_South_Africa
 ---
 reference2: https://www.gov.za/about-sa/public-holidays
 ---
-_template: page-hotjar.html
+_template: page.html
 ---
 structuredLogoData:
 
@@ -47,4 +47,18 @@ structuredLogoData:
 "url": "https://happyhols.co.za",
 "logo": "https://happyhols.co.za/static/happyhols-logo.png"
 }
+</script>
+---
+cookieConsentNoticeScript:
+
+<!-- Hotjar Tracking Code for https://happyhols.co.za/ -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:2886049,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
