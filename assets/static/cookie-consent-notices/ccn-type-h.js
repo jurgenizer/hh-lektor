@@ -1,6 +1,6 @@
 /*
-    Cookie Consent Notice Type h
-    Adapted from https://github.com/manucaralmo/GlowCookies
+    Cookie Consent Notice Type h by Jurgen Geitner
+    Adapted from https://github.com/manucaralmo/GlowCookies thank you!
 */
 
 class CookieConsentNotice {
@@ -15,13 +15,13 @@ class CookieConsentNotice {
     this.Cookies = undefined
     this.DOMbanner = undefined
     // Li items that show icons and associated text
+    this.LiDataCollectedLocation = undefined
     this.LiDataCollectedIdentifiers = undefined
     this.LiDataCollectedBrowsingHistory = undefined
-    this.LiDataCollectedLocation = undefined
     this.LiDataCollectedDeviceDetails = undefined
+    this.LiDataSharedLocation = undefined
     this.LiDataSharedIdentifiers = undefined
     this.LiDataSharedBrowsingHistory = undefined
-    this.LiDataSharedLocation = undefined
     this.LiDataSharedDeviceDetails = undefined
   }
 
@@ -71,31 +71,32 @@ class CookieConsentNotice {
                                       <div class="icon__list__container">
                                           <ul class="icon__list">
                                           <li class="header">Data Collected</li>
-                                          <li id="liDataCollectedDeviceDetails"><span class="material-icons" style="color: ${this.banner.deviceDetailsIcon.color};">tablet_mac</span>${this.banner.deviceDetailsIcon.text}</li>
+                                          <li id="liDataCollectedLocation"><span class="material-icons" style="color: ${this.banner.deviceDetailsIcon.color};">my_location</span>${this.banner.locationIcon.text}</li>
                                           <li id="liDataCollectedIdentifiers"><span class="material-icons" style="color: ${this.banner.deviceDetailsIcon.color};">badge</span>${this.banner.identifiersIcon.text}</li>
                                           <li id="liDataCollectedBrowsingHistory"><span class="material-icons" style="color: ${this.banner.deviceDetailsIcon.color};">history_toggle_off</span>${this.banner.browsingHistoryIcon.text}</li>
-                                          <li id="liDataCollectedLocation"><span class="material-icons" style="color: ${this.banner.deviceDetailsIcon.color};">my_location</span>${this.banner.locationIcon.text}</li>
+                                          <li id="liDataCollectedDeviceDetails"><span class="material-icons" style="color: ${this.banner.deviceDetailsIcon.color};">tablet_mac</span>${this.banner.deviceDetailsIcon.text}</li>
+                                         
                                           </ul>
                                       </div> 
                                       <div class="icon__list__container">
                                           <ul class="icon__list">
                                           <li class="header">Data Shared</li>
-                                          <li id="liDataSharedDeviceDetails"><span class="material-icons" style="color: ${this.banner.deviceDetailsIcon.color};">tablet_mac</span>${this.banner.deviceDetailsIcon.text}</li>
+                                          <li id="liDataSharedLocation"><span class="material-icons" style="color: ${this.banner.deviceDetailsIcon.color};">my_location</span>${this.banner.locationIcon.text}</li>
                                           <li id="liDataSharedIdentifiers"><span class="material-icons" style="color: ${this.banner.deviceDetailsIcon.color};">badge</span>${this.banner.identifiersIcon.text}</li>
                                           <li id="liDataSharedBrowsingHistory"><span class="material-icons" style="color: ${this.banner.deviceDetailsIcon.color};">history_toggle_off</span>${this.banner.browsingHistoryIcon.text}</li>
-                                          <li id="liDataSharedLocation"><span class="material-icons" style="color: ${this.banner.deviceDetailsIcon.color};">my_location</span>${this.banner.locationIcon.text}</li>
+                                          <li id="liDataSharedDeviceDetails"><span class="material-icons" style="color: ${this.banner.deviceDetailsIcon.color};">tablet_mac</span>${this.banner.deviceDetailsIcon.text}</li>
                                           </ul>
                                         </div>
                                   </div>
                             
                                     
-                                      <div class="btn__section">
-                                          <button type="button" id="acceptCookies" class="btn__accept accept__btn__styles" style="color: ${this.banner.acceptBtn.color}; background-color: ${this.banner.acceptBtn.background};">
-                                              ${this.banner.acceptBtn.text}
-                                          </button>
-                                          <button type="button" id="rejectCookies" class="btn__decline decline__btn__styles" style="color: ${this.banner.rejectBtn.color}; background-color: ${this.banner.rejectBtn.background};">
-                                              ${this.banner.rejectBtn.text}
-                                          </button>
+                                  <div class="btn__section">
+                                      <button type="button" id="rejectCookies" class="btn__decline decline__btn__styles" style="color: ${this.banner.rejectBtn.color}; border: ${this.banner.rejectBtn.border}; background-color: ${this.banner.rejectBtn.background};">
+                                          ${this.banner.rejectBtn.text}
+                                      </button>
+                                      <button type="button" id="acceptCookies" class="btn__accept accept__btn__styles" style="color: ${this.banner.acceptBtn.color}; border: ${this.banner.acceptBtn.border}; background-color: ${this.banner.acceptBtn.background};">
+                                          ${this.banner.acceptBtn.text}
+                                       </button>
                                       </div>
                                   </div>
                               `;
@@ -138,7 +139,7 @@ class CookieConsentNotice {
   openManageCookies() {
     this.PreBanner.style.display = this.config.hideAfterClick ? "none" : "block"
     this.DOMbanner.classList.remove('cookieConsentNotice__show')
-    
+
   }
 
   openSelector() {
@@ -152,7 +153,7 @@ class CookieConsentNotice {
     this.LiDataSharedBrowsingHistory.style.display = this.config.showDataSharedBrowsingHistory ? "block" : "none"
     this.LiDataSharedLocation.style.display = this.config.showDataSharedLocation ? "block" : "none"
     this.LiDataSharedDeviceDetails.style.display = this.config.showDataSharedDeviceDetails ? "block" : "none"
-    
+
   }
 
   acceptCookies() {
@@ -169,8 +170,8 @@ class CookieConsentNotice {
   }
 
   // Jurgen's experiment starts
-  setConsentDefault(){
-     // Google Analytics Tracking Consent set to default
+  setConsentDefault() {
+    // Google Analytics Tracking Consent set to default
     if (this.tracking.AnalyticsCode) {
       let Analytics = document.createElement('script');
       Analytics.setAttribute('src', `https://www.googletagmanager.com/gtag/js?id=${this.tracking.AnalyticsCode}`);
@@ -182,7 +183,7 @@ class CookieConsentNotice {
                                   'ad_storage': 'denied',
                                   'analytics_storage': 'denied'
                                 });`;
-     document.head.appendChild(AnalyticsData);
+      document.head.appendChild(AnalyticsData);
     }
   }
   // Jurgen's experiment ends
@@ -354,13 +355,15 @@ class CookieConsentNotice {
       heading: obj.bannerHeading !== 'none' ? obj.bannerHeading || lang.bannerHeading : '',
       acceptBtn: {
         text: obj.acceptBtnText || lang.acceptBtnText,
-        background: obj.acceptBtnBackground || '#209cee',
-        color: obj.acceptBtnColor || '#fff'
+        background: obj.acceptBtnBackground || '#d9eefc',
+        color: obj.acceptBtnColor || '#209cee', 
+        border: obj.acceptBtnBorder || 'none'
       },
       rejectBtn: {
         text: obj.rejectBtnText || lang.rejectBtnText,
         background: obj.rejectBtnBackground || '#209cee',
         color: obj.rejectBtnColor || '#fff',
+        border: obj.rejectBtnBorder || 'none'
       },
       identifiersIcon: {
         text: obj.identifiersIcontext || lang.identifiersIconText,
