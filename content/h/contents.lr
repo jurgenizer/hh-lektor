@@ -100,7 +100,7 @@ cookieConsentNoticeScript:
         showDataSharedDeviceDetails: true,
         showDataSharedIdentifiers: true,
         showDataSharedBrowsingHistory: true,
-        showDataSharedLocation: false,
+        showDataSharedLocation: true,
         border: 'none',
         position: 'left',
         policyLink: 'https://happyhols.co.za/privacy-policy/',
