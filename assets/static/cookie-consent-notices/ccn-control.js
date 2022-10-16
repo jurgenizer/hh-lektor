@@ -1,5 +1,5 @@
 /*
-    Cookie Consent Notice Type g
+    Cookie Consent Notice Control
     Adapted from https://github.com/manucaralmo/GlowCookies
 */
 
@@ -25,7 +25,7 @@ class CookieConsentNotice {
   addCss() {
     const stylesheet = document.createElement('link');
     stylesheet.setAttribute('rel', 'stylesheet');
-    stylesheet.setAttribute('href', '/static/cookie-consent-notices/ccn-type-g.css');
+    stylesheet.setAttribute('href', '/static/cookie-consent-notices/ccn-control.css');
     document.head.appendChild(stylesheet);
   }
 
@@ -49,43 +49,12 @@ class CookieConsentNotice {
                                       <h3 style="color: ${this.banner.color};">${this.banner.heading}</h3>
                                       <p style="color: ${this.banner.color};">
                                           ${this.banner.description} 
-                                          <a 
-                                              href="${this.banner.link}"
-                                              target="_blank" 
-                                              class="read__more"
-                                              style="color: ${this.banner.color};"
-                                          >
-                                              ${this.banner.linkText}
-                                          </a>
                                       </p>
-                                      <div class="chkbox__section">
-                                      <label class="container">Neccesary
-                                      <input type="checkbox" name="checkbox-disabled" disabled />
-                                      <span class="checkmark"></span>
-                                      </label>            
-                                      <label class="container">Personalisation & Design
-                                      <input type="checkbox" checked="checked">
-                                      <span class="checkmark"></span>
-                                      </label>
-                                      <label class="container">Analytics
-                                      <input type="checkbox" checked="checked">
-                                      <span class="checkmark"></span>
-                                      </label>
-                                      <label class="container">Social Media
-                                      <input type="checkbox" checked="checked">
-                                      <span class="checkmark"></span>
-                                      </label>
-                                      <label class="container">Marketing
-                                      <input type="checkbox" checked="checked">
-                                      <span class="checkmark"></span>
-                                      </label>
-                                      </div>
                                       <div class="btn__section">
                                           <button type="button" id="acceptCookies" class="btn__accept accept__btn__styles" style="color: ${this.banner.acceptBtn.color}; background-color: ${this.banner.acceptBtn.background};">
                                               ${this.banner.acceptBtn.text}
                                           </button>
                                       </div>
-
                                   </div>
                               `;
     document.body.appendChild(this.Cookies);
@@ -127,6 +96,12 @@ class CookieConsentNotice {
     this.openManageCookies()
     this.activateTracking()
     this.addCustomScript()
+  }
+
+  rejectCookies() {
+    localStorage.setItem("CookieConsentNotice", "0");
+    this.openManageCookies();
+    this.disableTracking();
   }
 
   activateTracking() {
@@ -264,8 +239,6 @@ class CookieConsentNotice {
 
     this.banner = {
       description: obj.bannerDescription || lang.bannerDescription,
-      linkText: obj.bannerLinkText || lang.bannerLinkText,
-      link: obj.policyLink || '#link',
       background: obj.bannerBackground || '#fff',
       color: obj.bannerColor || '#4a4a4a',
       heading: obj.bannerHeading !== 'none' ? obj.bannerHeading || lang.bannerHeading : '',
@@ -292,7 +265,6 @@ class LanguagesGC {
     let lang = this.arrLang[code] || this.arrLang['en']
     this.bannerHeading = lang['bannerHeading']
     this.bannerDescription = lang['bannerDescription']
-    this.bannerLinkText = lang['bannerLinkText']
     this.acceptBtnText = lang['acceptBtnText']
     this.manageText = lang['manageText']
   }
@@ -302,16 +274,14 @@ class LanguagesGC {
       af: {
         'bannerHeading': 'Ons gebruik koekies',
         'bannerDescription': 'Ons gebruik ons eie koekies en die van derdepartye, om inhoud te verpersoonlik en om webverkeer te ontleed.',
-        'bannerLinkText': 'Lees meer oor koekies',
         'acceptBtnText': 'Aanvaar koekies',
-        'manageText': 'Koekie-instellings'  
+        'manageText': 'Koekie-instellings'
       },
       en: {
         'bannerHeading': 'We use cookies',
         'bannerDescription': 'We use our own and third-party cookies to personalize content and to analyze web traffic.',
-        'bannerLinkText': 'Read more about cookies',
         'acceptBtnText': 'Accept cookies',
-        'manageText': 'Manage cookies',
+        'manageText': 'Manage cookies'
       }
     }
   }
