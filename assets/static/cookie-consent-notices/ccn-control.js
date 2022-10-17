@@ -67,7 +67,7 @@ class CookieConsentNotice {
   }
 
   checkStatus() {
-    switch (localStorage.getItem("CookieConsentNotice")) {
+    switch (localStorage.getItem("CookieConsentNoticeControl")) {
       case "1":
         this.openManageCookies();
         this.activateTracking();
@@ -92,14 +92,14 @@ class CookieConsentNotice {
   }
 
   acceptCookies() {
-    localStorage.setItem("CookieConsentNotice", "1")
+    localStorage.setItem("CookieConsentNoticeControl", "1")
     this.openManageCookies()
     this.activateTracking()
     this.addCustomScript()
   }
 
   rejectCookies() {
-    localStorage.setItem("CookieConsentNotice", "0");
+    localStorage.setItem("CookieConsentNoticeControl", "0");
     this.openManageCookies();
     this.disableTracking();
   }
@@ -114,7 +114,13 @@ class CookieConsentNotice {
       AnalyticsData.text = `window.dataLayer = window.dataLayer || [];
                                   function gtag(){dataLayer.push(arguments);}
                                   gtag('js', new Date());
-                                  gtag('config', '${this.tracking.AnalyticsCode}');`;
+                                  gtag('consent', 'update', {
+                                    'ad_storage': 'granted',
+                                    'analytics_storage': 'granted'
+                                  });
+                                  gtag('config', '${this.tracking.AnalyticsCode}' , {
+                                    'cookie_prefix': 'control',
+                                  });`;
       document.head.appendChild(AnalyticsData);
     }
 
