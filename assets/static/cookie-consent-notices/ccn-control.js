@@ -69,12 +69,11 @@ class CookieConsentNotice {
   checkStatus() {
     switch (localStorage.getItem("CookieConsentNoticeControl")) {
       case "1":
-        this.openManageCookies();
+        this.openSelector();
         this.activateTracking();
-        this.addCustomScript();
         break;
       case "0":
-        this.openManageCookies();
+        this.openSelector();
         break;
       default:
         this.openSelector();
