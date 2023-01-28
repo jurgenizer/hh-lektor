@@ -1,5 +1,5 @@
 /*
-    Cookie Consent Notice Type H4 by Jurgen Geitner
+    Cookie Consent Notice Type H5 by Jurgen Geitner
     Adapted from https://github.com/manucaralmo/GlowCookies thank you!
 */
 
@@ -121,7 +121,7 @@ class CookieConsentNotice {
   }
 
   checkStatus() {
-    switch (localStorage.getItem("CookieConsentNoticeH4")) {
+    switch (localStorage.getItem("CookieConsentNoticeH5")) {
       case "1":
         this.openManageCookies();
         this.activateTracking();
@@ -157,14 +157,14 @@ class CookieConsentNotice {
   }
 
   acceptCookies() {
-    localStorage.setItem("CookieConsentNoticeH4", "1")
+    localStorage.setItem("CookieConsentNoticeH5", "1")
     this.openManageCookies()
     this.activateTracking()
     this.addCustomScript()
   }
 
   rejectCookies() {
-    localStorage.setItem("CookieConsentNoticeH4", "0");
+    localStorage.setItem("CookieConsentNoticeH5", "0");
     this.openManageCookies();
     this.disableTracking();
   }
@@ -203,7 +203,7 @@ class CookieConsentNotice {
                                     'analytics_storage': 'granted'
                                   });
                                   gtag('config', '${this.tracking.AnalyticsCode}' , {
-                                    'cookie_prefix': 'type_h4',
+                                    'cookie_prefix': 'type_h5',
                                   });`;
       document.head.appendChild(AnalyticsData);
     }
