@@ -1,6 +1,6 @@
 /*
     Cookie Consent Notice Type h by Jurgen Geitner
-    Adapted from https://github.com/manucaralmo/GlowCookies thank you!
+    Adapted from https://github.com/manucaralmo/GlowCookies
 */
 
 class CookieConsentNotice {
@@ -14,7 +14,7 @@ class CookieConsentNotice {
     this.PreBanner = undefined
     this.Cookies = undefined
     this.DOMbanner = undefined
-    // Li items that show icons and associated text
+    // Li items that show icons and associated text labels
     this.LiDataCollectedLocation = undefined
     this.LiDataCollectedIdentifiers = undefined
     this.LiDataCollectedBrowsingHistory = undefined
@@ -34,7 +34,7 @@ class CookieConsentNotice {
   addCss() {
     const stylesheet = document.createElement('link');
     stylesheet.setAttribute('rel', 'stylesheet');
-    stylesheet.setAttribute('href', '/static/cookie-consent-notices/ccn-type-h.css');
+    stylesheet.setAttribute('href', 'ccn-type-h.css');
     document.head.appendChild(stylesheet);
   }
 
@@ -75,8 +75,12 @@ class CookieConsentNotice {
                                           <li id="liDataCollectedIdentifiers"><span class="material-icons" style="color: ${this.banner.deviceDetailsIcon.color};">badge</span>${this.banner.identifiersIcon.text}</li>
                                           <li id="liDataCollectedBrowsingHistory"><span class="material-icons" style="color: ${this.banner.deviceDetailsIcon.color};">history_toggle_off</span>${this.banner.browsingHistoryIcon.text}</li>
                                           <li id="liDataCollectedDeviceDetails"><span class="material-icons" style="color: ${this.banner.deviceDetailsIcon.color};">tablet_mac</span>${this.banner.deviceDetailsIcon.text}</li>
-                                         
                                           </ul>
+                                          <ul class="for__list">
+                                          <li class="header">For</li>
+                                          <li>Personalised Advertising</li>
+                                          <li>Analytics</li>
+                                          </ul>        
                                       </div> 
                                       <div class="icon__list__container">
                                           <ul class="icon__list">
@@ -85,6 +89,13 @@ class CookieConsentNotice {
                                           <li id="liDataSharedIdentifiers"><span class="material-icons" style="color: ${this.banner.deviceDetailsIcon.color};">badge</span>${this.banner.identifiersIcon.text}</li>
                                           <li id="liDataSharedBrowsingHistory"><span class="material-icons" style="color: ${this.banner.deviceDetailsIcon.color};">history_toggle_off</span>${this.banner.browsingHistoryIcon.text}</li>
                                           <li id="liDataSharedDeviceDetails"><span class="material-icons" style="color: ${this.banner.deviceDetailsIcon.color};">tablet_mac</span>${this.banner.deviceDetailsIcon.text}</li>
+                                          </ul>
+                                          <ul class="for__list">
+                                          <li class="header">For</li>
+                                          <li>Personalised Advertising</li>
+                                          <li>Personalised Content</li>
+                                          <li>Personalised Services</li>
+                                          <li>Analytics</li>
                                           </ul>
                                         </div>
                                   </div>
@@ -356,30 +367,30 @@ class CookieConsentNotice {
       acceptBtn: {
         text: obj.acceptBtnText || lang.acceptBtnText,
         background: obj.acceptBtnBackground || '#d9eefc',
-        color: obj.acceptBtnColor || '#209cee', 
+        color: obj.acceptBtnColor || '#0B67A5',
         border: obj.acceptBtnBorder || 'none'
       },
       rejectBtn: {
         text: obj.rejectBtnText || lang.rejectBtnText,
-        background: obj.rejectBtnBackground || '#209cee',
+        background: obj.rejectBtnBackground || '#0B67A5',
         color: obj.rejectBtnColor || '#fff',
         border: obj.rejectBtnBorder || 'none'
       },
       identifiersIcon: {
         text: obj.identifiersIcontext || lang.identifiersIconText,
-        color: obj.iconColor || '#209cee'
+        color: obj.iconColor || '#0B67A5'
       },
       locationIcon: {
         text: obj.locationIconText || lang.locationIconText,
-        color: obj.iconColor || '#209cee'
+        color: obj.iconColor || '#0B67A5'
       },
       browsingHistoryIcon: {
         text: obj.browsingHistoryIconText || lang.browsingHistoryIconText,
-        color: obj.iconColor || '#209cee'
+        color: obj.iconColor || '#0B67A5'
       },
       deviceDetailsIcon: {
         text: obj.deviceDetailsIconText || lang.deviceDetailsIconText,
-        color: obj.iconColor || '#209cee'
+        color: obj.iconColor || '#0B67A5'
       },
       manageCookies: {
         color: obj.manageColor || '#7a7a7a',
