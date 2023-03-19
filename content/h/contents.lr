@@ -101,7 +101,7 @@ cookieConsentNoticeScript:
         border: 'none',
         position: 'left',
         policyLink: 'https://happyhols.co.za/privacy-policy/',
-        bannerDescription: 'Do you consent to the use of third-party cookies as desribed below? Read more in our',
+        bannerDescription: 'Do you consent to the use of third-party cookies as described below? Read more in our',
         bannerLinkText: 'Privacy Policy.',
         bannerBackground: '#ffffff',
         acceptBtnText: 'Accept',
